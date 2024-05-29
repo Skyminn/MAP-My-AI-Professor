@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAP | My Ai Professor</title>
+<link rel="stylesheet" href="test.css">
+</head>
+<body>
+
+<img class="logo" src="image/mini_logo.png" alt="로고" onclick="window.location.href='home.html'">
+
+<div class="menu-container">
+    <div class="menu-text" onclick="window.location.href='test.html'">문제 생성</div>
+    <div class="menu-text" onclick="window.location.href='summary.html'">핵심 요약 생성</div>
+    <div class="menu-text">FAQ</div>
+</div>
+
+<form>
+    <img class="image" src="image/test_generate.png" alt="이미지">
+    <div class="subject">과목명<input type="text" class="input-field1" placeholder="과목명을 입력하세요." id="subjectField" style="background-color: #FFFFFF;"></div><br><br>
+    <div class="checkbox-container">
+        <input type="checkbox" class="checkbox">
+        <div class="category">객관식</div>
+        <input type="text" class="input-field2" placeholder="문항수를 입력하세요." id="objectiveField"></div><br><br>
+    </div>
+    <div class="checkbox-container">
+        <input type="checkbox" class="checkbox">
+        <div class="category">단답식</div>
+        <input type="text" class="input-field2" placeholder="문항수를 입력하세요." id="shortAnswerField"></div><br><br>
+    </div>
+    <div class="checkbox-container">
+        <input type="checkbox" class="checkbox">
+        <div class="category">서술형</div>
+        <input type="text" class="input-field2" placeholder="문항수를 입력하세요." id="essayField"></div><br><br>
+    </div>
+    <input type="file" accept=".pdf" id="pdf-upload" style="display: none;">
+    <label for="pdf-upload" class="button">PDF 업로드</label>
+</form>
+
+<script src="test.js"></script>
+</body>
+</html>
