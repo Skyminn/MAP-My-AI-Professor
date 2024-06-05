@@ -28,8 +28,8 @@ document.getElementById('pdf-upload').addEventListener('change', function(event)
             a.click();
             window.URL.revokeObjectURL(url);
 
-            // 다운로드가 완료되면 home.html로 전환
-            window.location.href = 'home.html';
+            // 다운로드가 완료되면 complete.html로 전환
+            window.location.href = 'complete.html';
         })
         .catch(error => {
             console.error('Error:', error);
