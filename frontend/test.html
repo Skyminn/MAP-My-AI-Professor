@@ -16,21 +16,21 @@
     <div class="menu-text">FAQ</div>
 </div>
 
-<form>
+<form onsubmit="return false;">
     <img class="image" src="image/test_generate.png" alt="이미지">
     <div class="subject">과목명<input type="text" class="input-field1" placeholder="과목명을 입력하세요." id="subjectField" style="background-color: #FFFFFF;"></div><br><br>
     <div class="checkbox-container">
-        <input type="checkbox" class="checkbox">
+        <input type="checkbox" class="checkbox" name="objective">
         <div class="category">객관식</div>
         <input type="text" class="input-field2" placeholder="문항수를 입력하세요." id="objectiveField"></div><br><br>
     </div>
     <div class="checkbox-container">
-        <input type="checkbox" class="checkbox">
+        <input type="checkbox" class="checkbox" name="shortAnswer">
         <div class="category">단답식</div>
         <input type="text" class="input-field2" placeholder="문항수를 입력하세요." id="shortAnswerField"></div><br><br>
     </div>
     <div class="checkbox-container">
-        <input type="checkbox" class="checkbox">
+        <input type="checkbox" class="checkbox" name="essay">
         <div class="category">서술형</div>
         <input type="text" class="input-field2" placeholder="문항수를 입력하세요." id="essayField"></div><br><br>
     </div>
@@ -38,6 +38,15 @@
     <label for="pdf-upload" class="button">PDF 업로드</label>
 </form>
 
+<div id="loading-modal" class="loading-modal">
+    <div class="modal-content">
+        <div class="spinner"></div>
+        <p>문제를 생성 중입니다. 잠시만 기다려주세요...</p>
+    </div>
+</div>
+
+
 <script src="test.js"></script>
 </body>
 </html>
+
